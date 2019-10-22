@@ -20,7 +20,7 @@
 				<!-- Header -->
 					<header id="header">
 						<h1>Habits</h1>
-						<p>My first iOS application and daily habit tracker.</p>
+						<p>My first iOS application; a daily habit tracker.</p>
 					</header>
 
 				<!-- Main -->
@@ -28,14 +28,17 @@
 
 						<!-- Content -->
 							<section id="content" class="main">
-								<span class="image main"><img src="images/pic04.jpg" alt="" /></span>
-								<h2>"We are what we repeatedly do"</h2>
-								<p>When I was a senior in high school I started to think about success. What does it mean to be succesful? How does someone succeed in something? How do I become successful at what I want to do? These are some of the questions that occupied my mind from time to time, and for a while I left them on the surface; I didn't really want to commit my time to answering those questions.</p>
-								<p>It wasn't until recently when a close relative of mine was diagnosed with cancer that I decided to revisit those questions. With the diagnosis, I began to realize that for all of us, time isn't a guarantee; any day could be our last. I told myself that I couldn't take my time for granted anymore, and that I needed to live my best possible life right now.</p>
-								<p>I started to write in my journal. I wrote down all of my dreams and the steps I needed to take in order to manifest those dreams. I took those steps and made them into habits; actions that I've decided to commit to for years. And, maybe someday, with all the habits I've established and continue to work on, I'll get there. If I keep at it, maybe someday these dreams will become my reality. Maybe someday, I'll become a self-made man, someone people can look up to and gain inspiration from. I'll automate the things people don't want to do, small and large tasks. And someday, maybe I'll shape the world of virtual reality, blurring the lines between reality and code.</p>
-								<p>I'm giving it my best shot, one day, one step at a time.</p>
+								<h2>"Boy, I really wish I had a simple application to track my habits"</h2>
+								<p>That quote is pretty much the entire reason for this application. I wanted to work on myself by committing to a bunch of habits that I had carefully designed, but as those habits hadn't been ingrained yet, I needed something that could remind me. Up until now I've been using an application from the App Store called 'Todoist'. It's not bad. Most of the time it does what I need it to do, but I found the number of features overwhelming. The worst part is that every now and then the to do items I've specified under a certain parent item will hop over to another parent item. I can't drag the items back to the correct parent item; they just hop back over to the incorrect item. And so I decided to make a simpler habit/item tracker, one that could one day be the foundation for a habit tracker with more features.</p>
+								<video width="320" height="240" controls>
+								  <source src="images/habits-demo.mp4" type="video/mp4">
+								  Your browser does not support the video tag.
+								</video>
+								<p>As you can see the application is fairly simple; I only used UIKit and Foundation. In terms of view controllers, the application mainly relies on UITableViewControllers. In the process of creating this application I made sure to separate the data models from the view controllers. In other words, everything related to the data model was implemented separately from the view controllers. For example, functions such as loading user data, detecting first time use of the application, and sorting the lists, were implemented in the data model. Sometimes, it was more appropriate to call a function outside of it's implementation file; in those cases I often relied on delegates.</p>
+								<p>Before creating this application, I had a very shallow idea of the model-view-controller design pattern. I understood it conceptually, but I didn't know how it worked in practice. I didn't know what optionals were, or what people meant when they talked about unwrapping one. It was also my first time interacting with the storyboard. I learned how to connect the views to code, and how to add constraints so that the application wouldn't appear too differently on other devices. Of course, there's still a lot I don't know, and Google has been my best friend in times of ignorance. Even though the application is fully functional, there's a lot more features I want to eventually implement.</p>
+								<p>I want to assign due dates/times to certain habits, and from there implement local notifications to alert the user. I want to create streaks so that I can know how long I've been consistent for a habit. I want to make habits more fun, and one way to do this is by reshaping the application into a game. As I'm planning on using this application as my daily habit tracker, I will very likely be updating it again soon. You can view my progress on GitHub using the icon link in the footer!</p>
 								<ul class="actions special">
-									<li><a href="index.html" class="button">Back to Home Page</a></li>
+									<li><a href="index.html" class="button">Back to Home</a></li>
 								</ul>
 							</section>
 
@@ -44,31 +47,21 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</section>
-						<section>
-							<h2>Etiam feugiat</h2>
+							<h2>Contact information</h2>
 							<dl class="alt">
-								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
 								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
+								<dd>(978) 319-5929</dd>
 								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd>
+								<dd>enguyen@hmc.edu</dd>
+								<dt>GitHub</dt>
+								<dd>
+								<ul class="icons">
+								<li><a href="https://github.com/ericnguyen11" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								</ul>
+								</dd>
 							</dl>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
-							</ul>
 						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; enguyen. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
 			</div>
