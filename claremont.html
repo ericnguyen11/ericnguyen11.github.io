@@ -1,82 +1,138 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Stellar by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>The Claremont Trials</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+  <head>
+    <title>The Claremont Trials</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <h1>The Claremont Trials</h1>
+        <p>My first game. Moral of the story? Patience is everything.</p>
+      </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <!-- Content -->
+        <section id="content" class="main">
+          <span class="image main"
+            ><img src="images/game-background.png" alt=""
+          /></span>
+          <h2>"Why did he disappear?!"</h2>
+          <p>
+            This game was created during my last semester at Harvey Mudd
+            College. I was taking a class called Object-Oriented Game
+            Development and this was my group's final project. I'm gonna be
+            honest here and say that this was not an easy project. Although my
+            group and I had worked diligently up until the last week before the
+            project was due, something that I didn't anticipate came to my
+            attention; our code was incompatible. We had three students working
+            on the code portion of the task including myself; our last group
+            member created the pixel art. In an attempt to save our grades I
+            decided to stray from the original concept of the game. The
+            Claremont Trials was originally supposed to be conceptually similar
+            to Super Mario Brothers; a side-scrolling level based game. As we no
+            longer had the time to create multiple levels I salvaged whatever I
+            could from the current repository and decided to make a mini-game.
+          </p>
+          <p>
+            The objective of the game is simple: complete as many homework
+            assignments as you can until time runs out. The more assignments you
+            complete, the higher your score. Implementing this 'simple' game
+            however, was harder than it sounded.
+          </p>
+          <p>
+            I had to make a menu for the user, and then I had to link that menu
+            to two different options, "Play Game" or "Exit". Then in order to
+            make the game a bit more fun I imported some funky music that at
+            first played only in the menu but not when the player navigated to
+            the game screen. Then I had to make homework assignments fall from
+            the sky at seemingly 'random' positions along the width of the
+            screen. Then I had to shoot pencils out of my character object. Then
+            I had to keep track of scoring every time a homework assignment
+            collided with a pencil but as a side effect my character would
+            disappear!
+          </p>
+          <p>
+            It was also tedious as I was using C++, meaning I had to think about
+            memory allocation; when it was appropriate to deallocate memory. I
+            also had to learn how to keep track of the game score using an XML
+            file.
+          </p>
+          <p>
+            A lot of the times, I felt like I was banging my head into a wall. I
+            kept stumbling across bug after bug, even though I was implementing
+            one feature at a time. But you know what? It was worth it in the
+            end. It turned out pretty decent, so here's a demo!
+          </p>
+          <video width="320" height="240" controls>
+            <source src="images/game.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p>
+            If you want to try out the game yourself, just navigate to
+            TheClaremontTrials repo on my GitHub, and follow the Read Me
+            document. You can access my GitHub profile by clicking on the icon
+            in the footer. Oh and, a score of 400 means you got a 4.00 GPA.
+            Happy studying!
+          </p>
+          <ul class="actions special">
+            <li><a href="index.html" class="button">Back</a></li>
+          </ul>
+        </section>
+      </div>
 
-				<!-- Header -->
-					<header id="header">
-						<h1>The Claremont Trials</h1>
-						<p>My first game. Moral of the story? Patience is everything.</p>
-					</header>
+      <!-- Footer -->
+      <footer id="footer">
+        <section>
+          <h2>Contact information</h2>
+          <dl class="alt">
+            <dt>Phone</dt>
+            <dd>(978) 319-5929</dd>
+            <dt>Email</dt>
+            <dd>enguyen@hmc.edu</dd>
+            <dt>GitHub</dt>
+            <dd>
+              <ul class="icons">
+                <li>
+                  <a
+                    href="https://github.com/ericnguyen11"
+                    class="icon brands fa-github alt"
+                    ><span class="label">GitHub</span></a
+                  >
+                </li>
+              </ul>
+            </dd>
+          </dl>
+        </section>
+        <p class="copyright">
+          &copy; enguyen. Design: <a href="https://html5up.net">HTML5 UP</a>.
+        </p>
+      </footer>
+    </div>
 
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Content -->
-							<section id="content" class="main">
-								<span class="image main"><img src="images/game-background.png" alt="" /></span>
-								<h2>"Why did he disappear?!"</h2>
-								<p>This game was created during my last semester at Harvey Mudd College. I was taking a class called Object-Oriented Game Development and this was my group's final project. I'm gonna be honest here and say that this was not an easy project. Although my group and I had worked diligently up until the last week before the project was due, something that I didn't anticipate came to my attention; our code was incompatible. We had three students working on the code portion of the task including myself; our last group member created the pixel art. In an attempt to save our grades I decided to stray from the original concept of the game. The Claremont Trials was originally supposed to be conceptually similar to Super Mario Brothers; a side-scrolling level based game. As we no longer had the time to create multiple levels I salvaged whatever I could from the current repository and decided to make a mini-game.</p>
-								<p>The objective of the game is simple: complete as many homework assignments as you can until time runs out. The more assignments you complete, the higher your score. Implementing this 'simple' game however, was harder than it sounded.</p>
-								<p>I had to make a menu for the user, and then I had to link that menu to two different options, "Play Game" or "Exit". Then in order to make the game a bit more fun I imported some funky music that at first played only in the menu but not when the player navigated to the game screen. Then I had to make homework assignments fall from the sky at seemingly 'random' positions along the width of the screen. Then I had to shoot pencils out of my character object. Then I had to keep track of scoring every time a homework assignment collided with a pencil but as a side effect my character would disappear!</p>
-								<p>It was also tedious as I was using C++, meaning I had to think about memory allocation; when it was appropriate to deallocate memory. I also had to learn how to keep track of the game score using an XML file.</p>
-								<p>A lot of the times, I felt like I was banging my head into a wall. I kept stumbling across bug after bug, even though I was implementing one feature at a time. But you know what? It was worth it in the end. It turned out pretty decent, so here's a demo!</p>
-								<video width="320" height="240" controls>
-								  <source src="images/game.mp4" type="video/mp4">
-								  Your browser does not support the video tag.
-								</video>
-								<p>If you want to try out the game yourself, just navigate to TheClaremontTrials repo on my GitHub, and follow the Read Me document. You can access my GitHub profile by clicking on the icon in the footer. Oh and, a score of 400 means you got a 4.00 GPA. Happy studying!</p>
-								<ul class="actions special">
-									<li><a href="index.html" class="button">Back to Home</a></li>
-								</ul>
-							</section>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Contact information</h2>
-							<dl class="alt">
-								<dt>Phone</dt>
-								<dd>(978) 319-5929</dd>
-								<dt>Email</dt>
-								<dd>enguyen@hmc.edu</dd>
-								<dt>GitHub</dt>
-								<dd>
-								<ul class="icons">
-								<li><a href="https://github.com/ericnguyen11" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								</ul>
-								</dd>
-							</dl>
-						</section>
-						<p class="copyright">&copy; enguyen. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
