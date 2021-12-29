@@ -2613,6 +2613,10 @@ ul.actions li {
   vertical-align: middle;
 }
 
+ul.actionstwo li {
+  vertical-align: middle;
+}
+
 ul.actions.center {
   display: table;
   margin: 0 auto;
