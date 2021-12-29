@@ -1962,6 +1962,10 @@ button,
   white-space: nowrap;
 }
 
+a.projects {
+  margin-bottom: 5em;
+}
+
 input[type="submit"].icon,
 input[type="reset"].icon,
 input[type="button"].icon,
@@ -2613,13 +2617,12 @@ ul.actions li {
   vertical-align: middle;
 }
 
-ul.actionstwo li {
-  vertical-align: middle;
+ul.actionsprojects {
+  padding: 5em 0 0 0;
 }
 
-ul.actions.center {
-  display: table;
-  margin: 0 auto;
+ul.actionsprojectsdetail {
+  padding: 1em 0 0 0;
 }
 
 ul.actions.special {
