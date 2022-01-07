@@ -30,58 +30,50 @@
       <div id="main">
         <!-- Content -->
         <section id="content" class="main">
-          <h2>
-            "Boy, I really wish I had a simple application to track my habits"
-          </h2>
+          <h2>"I really wish I had a simple application to track my habits"</h2>
           <p>
-            That quote is pretty much the entire reason for this application. I
-            wanted to work on myself by committing to a bunch of habits that I
-            had carefully designed, but as there's a lot to keep track of in a
-            day, I needed something that could remind me. Up until now I've been
-            using an application from the App Store called 'Todoist'. It's not
-            bad. Most of the time it does what I need it to do, but I found the
-            layout a bit overwhelming. The worst part is that every now and then
-            the to do items I've specified under a certain parent item will hop
-            over to another parent item. I can't drag the items back to the
-            correct parent item; they just hop back over. And so I decided to
-            make a simpler habit/item tracker, one that could one day be the
-            foundation for a habit tracker with more features.
+            That quote is pretty much the entire reason why I created this
+            application. I wanted to work on myself by committing to some
+            habits, but as there were a lot of habits to track I needed
+            something to remind me. I was using a task tracker from the App
+            Store called 'Todoist'. Most of the time it functioned correctly,
+            but I found the layout at times overwhelming. The worst part was
+            that occasionally the habits I specified under a parent list would
+            hop over to another list. I couldn't drag the items back to the
+            correct parent list either; they just hopped back over. I couldn't
+            find another app so I decided to make a simpler habit tracker, one
+            with just the bare necessities.
           </p>
           <p>
-            As you can see the application is fairly simple; I only used UIKit
-            and Foundation. In terms of view controllers, the application mainly
-            relies on UITableViewControllers. In the process of creating this
-            application I made sure to separate the data models from the view
-            controllers. In other words, everything related to the data model
-            was implemented separately from the view controllers. For example,
-            functions such as loading user data, detecting if the user is a
-            first time user of the application, and sorting the lists, were
-            implemented in the data model. Sometimes, it was more appropriate to
-            call a function outside of it's implementation file; in those cases
-            I often relied on delegates.
+            As you can see below in the video the application is fairly simple;
+            I only used UIKit and Foundation. In terms of view controllers the
+            application mainly relies on UITableViewControllers. In the process
+            of creating this application I made sure to separate the data models
+            from the view controllers. For example, functions such as loading
+            user data, detecting if the user is a first time user of the
+            application and sorting the lists, were implemented in the data
+            model. Sometimes, it was more appropriate to call a function outside
+            of it's implementation file; in those cases I relied on delegates.
           </p>
           <p>
-            Before creating this application, I had a very shallow idea of the
-            model-view-controller design pattern. I understood it conceptually,
-            but I didn't know how it worked in practice. I didn't know what
-            optionals were, or what people in forums meant when they talked
-            about unwrapping one. It was also my first time interacting with the
-            storyboard. I learned how to connect the views to code, and how to
-            add constraints so that the application wouldn't appear too
-            differently on other devices. Of course, there's still a lot I don't
-            know, and Google has been my best friend in times of ignorance. Even
-            though the application is fully functional, there's a lot more
-            features I want to eventually implement.
+            Before coding this application I had a very shallow idea of the
+            model-view-controller design pattern. I understood it conceptually
+            but I didn't know how it worked practically. I didn't know what
+            optionals were, or what people in forums meant when they mentioned
+            unwrapping one. It was also my first time interacting with the
+            storyboard. I learned how to connect the views to code and how to
+            add constraints so that the application would appear similarly on
+            other devices. Of course there's still a lot I don't know, and
+            Google has been my best friend in times of ignorance. Even though
+            the application is fully functional there's plenty of features I've
+            thought about adding.
           </p>
           <p>
-            I want to assign due dates/times to certain habits, and from there
-            implement local notifications to alert the user. I want to create
-            streaks so that I can know how long I've been consistent for a
-            habit. I want to make habits more fun, and one way I've been
-            thinking about doing this is by reshaping the application into a
-            game. As I'm planning on using this application as my daily habit
-            tracker, I will very likely be updating it again soon. You can view
-            my progress on GitHub using the icon link in the footer!
+            I want the option of due dates for certain habits and local
+            notifications to alert the user. I want to display streaks to track
+            my consistency. I also want to make the app more fun, maybe by
+            restructuring the app into a game. You can view my progress on
+            GitHub using the icon in the footer.
           </p>
           <video width="320" height="240" controls>
             <source src="images/habits-demo.mp4" type="video/mp4" />
